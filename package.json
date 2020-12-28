@@ -1,0 +1,21 @@
+{
+  "name": "nextjs-uce-template",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "serve": "serve out"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "uce-loader": "^2.0.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "serve": "^11.3.2"
+  }
+}
