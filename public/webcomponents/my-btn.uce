@@ -1,19 +1,17 @@
-<template is="uce-template">
-  <button is="my-btn">Clicked {{ times }} times!</button>
-  <script type="module">
-    const states = new WeakMap();
-    export default {
-      setup(element) {
-        const state = { times: 0 };
-        states.set(element, state);
-        return state;
-      },
-      onClick() {
-        states.get(this).times++;
-        // update the current view if the
-        // state is not reactive
-        this.render();
-      },
-    };
-  </script>
-</template>
+<button is="my-btn">Clicked {{ times }} times!</button>
+<script type="module">
+  const states = new WeakMap();
+  export default {
+    setup(element) {
+      const state = { times: 0 };
+      states.set(element, state);
+      return state;
+    },
+    onClick() {
+      states.get(this).times++;
+      // update the current view if the
+      // state is not reactive
+      this.render();
+    },
+  };
+</script>
